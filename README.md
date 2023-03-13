@@ -37,7 +37,9 @@ The solution consist of 2 components:
 
 ### Step 1: Create Twilio API Key and Secret
 
-Login to [Twilio Console](https://console.twilio.com/) and copy down your `Account SID`. Next, on the top right, select `Account` followed by `API keys & tokens`. Click on `Create API key`. Enter `Flex - VoIP` for the Friendly name and leave everything as default.
+1. Login to [Twilio Console](https://console.twilio.com/) and copy down your `Account SID`.
+2. Next, on the top right, select `Account` followed by `API keys & tokens`. Click on `Create API key`.
+3. Enter `Flex - VoIP` for the Friendly name and leave everything as default.
 
 ![API Key and Secret](docs/API_Key_Secret.png)
 
@@ -45,11 +47,9 @@ Take note of your Account SID (`ACxxx`), API Key SID (starts with `SKxxxx`) and 
 
 ### Step 2: Create a Studio Workflow
 
-Within [Twilio Console](https://console.twilio.com/) and under `Studio`, create a new Studio Flow.
-
-Still within the Studio Flow, drag-and-drop the `Send to Flex` widget and configure the `Workflow` and `Task Channel` accordingly. For `Task Channel`, please choose `Voice`.
-
-Once created, connect the `Incoming Call` trigger to `Send to Flex` widget and click `Publish`.
+1. Within [Twilio Console](https://console.twilio.com/) and under `Studio`, create a new Studio Flow.
+2. Still within the Studio Flow, drag-and-drop the `Send to Flex` widget and configure the `Workflow` and `Task Channel` accordingly. For `Task Channel`, please choose `Voice`.
+3. Once created, connect the `Incoming Call` trigger to `Send to Flex` widget and click `Publish`.
 
 The Studio Flow should be configured similar to the screenshot below:
 

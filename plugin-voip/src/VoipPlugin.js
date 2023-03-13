@@ -11,6 +11,8 @@ export default class VoipPlugin extends FlexPlugin {
   async init(flex, manager) {
     // Update Flex Config to Enable "client:" to allowing calling to other "clients"
     flex.Manager.getInstance().updateConfig({ enableClientCalling: true });
+
+    // Set Caller ID
     flex.Actions.replaceAction("StartOutboundCall", (payload, original) => {
       if (payload.destination.startsWith("client:")) {
         manager.user.identity
