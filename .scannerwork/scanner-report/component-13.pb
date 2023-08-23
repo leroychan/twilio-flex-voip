@@ -1,1 +1,0 @@
- 2jsX³hr/frontend-voip-to-flex-demo/assets/quickstart.js
