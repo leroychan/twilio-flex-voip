@@ -29,20 +29,6 @@ $(function () {
   let device;
   let token;
 
-  // Get User Location
-  let lat = "123";
-  let lng = "456";
-
-  navigator.geolocation.getCurrentPosition(
-    (position) => {
-      lat = position.coords.latitude;
-      lng = position.coords.longitude;
-    },
-    () => {
-      console.log("Unable to get coordinates");
-    }
-  );
-
   // Event Listeners
 
   callButton.onclick = (e) => {
@@ -120,8 +106,6 @@ $(function () {
     var params = {
       // get the phone number to call from the DOM
       To: "",
-      lat: lat,
-      lng: lng,
     };
 
     if (device) {
